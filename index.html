@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>無職晩餐 - Jobless dinner by Nemui Nari -</title>
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- ハンバーガーメニュー開閉スクリプト -->
     <script src="js/navMenu.js" defer></script>
   </head>
 
   <body>
     <header>
-      <!-- ナビゲーション -->
       <div class="header-content">
         <div class="nav-logo">Mysite - 工事中</div>
 
-        <!-- ハンバーガーボタン -->
-        <div class="nav-toggle" id="navToggle">☰</div>
+        <button
+          id="navToggle"
+          class="nav-toggle"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="メニューを開く"
+        >
+          ☰
+        </button>
 
-        <nav class="nav">
-          <ul class="nav-menu" id="navMenu">
+        <nav>
+          <ul id="navMenu" class="nav-menu">
             <li><a href="#home">HOME</a></li>
             <li><a href="#profile">PROFILE</a></li>
             <li><a href="#art">ART</a></li>
