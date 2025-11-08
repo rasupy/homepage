@@ -86,12 +86,46 @@ nav {
 .header-image {
   width: 100%;
   text-align: right;
+  overflow: hidden;
+  position: relative;
 }
 
 .header-image img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.header-image::before,
+.header-image::after {
+  animation: 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  background: #fff;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.header-image::before {
+  animation-name: header-image-before;
+  inset: 0 0 50%;
+}
+
+.header-image::after {
+  animation-name: header-image-after;
+  inset: 50% 0 0;
+}
+
+@keyframes header-image-before {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes header-image-after {
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* レスポンシブ対応
