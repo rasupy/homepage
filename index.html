@@ -4,27 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>無職晩餐 - Jobless dinner by Nemui Nari -</title>
-
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ハンバーガーメニュー開閉スクリプト -->
+    <script src="js/navMenu.js" defer></script>
   </head>
+
   <body>
     <header>
-      <div class="header-image">
-        <img src="images/header_1.png" alt="サイトのヘッダー画像" />
-      </div>
-
+      <!-- ナビゲーション -->
       <div class="header-content">
-        <nav>
-          <ul>
-            <li>Profile</li>
-            <li>Art</li>
-            <li>Blog</li>
-            <li>Item</li>
-            <li>Contact</li>
+        <div class="nav-logo">Mysite - 工事中</div>
+
+        <!-- ハンバーガーボタン -->
+        <div class="nav-toggle" id="navToggle">☰</div>
+
+        <nav class="nav">
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#art">ART</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#item">ITEM</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
+
+      <div class="header-image">
+        <img src="images/header_1.png" alt="サイトのヘッダー画像" />
+      </div>
     </header>
+
     <footer>
       <div class="footer-content">
         <p>© Jobless dinner by Nemui Nari 2025.</p>
