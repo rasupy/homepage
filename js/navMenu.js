@@ -1,9 +1,7 @@
 // ハンバーガーメニュー開閉スクリプト
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("navToggle");
-  const menu = document.getElementById("navMenu");
+const toggle = document.getElementById("navToggle");
+const menu = document.getElementById("navMenu");
 
-  toggle.addEventListener("click", function () {
-    menu.classList.toggle("active");
-  });
+toggle.addEventListener("click", function () {
+  menu.classList.toggle("active");
 });
